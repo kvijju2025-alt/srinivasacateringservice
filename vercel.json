@@ -3,10 +3,7 @@
   "builds": [
     {
       "src": "index.php",
-      "use": "vercel-php@0.6.0",
-      "config": {
-        "maxDuration": 10
-      }
+      "use": "vercel-php@0.7.2"
     },
     {
       "src": "public/**",
@@ -34,30 +31,15 @@
   "headers": [
     {
       "source": "/public/css/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=2592000, stale-while-revalidate=86400"
-        }
-      ]
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=2592000" }]
     },
     {
       "source": "/public/js/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=2592000, stale-while-revalidate=86400"
-        }
-      ]
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=2592000" }]
     },
     {
       "source": "/public/images/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable"
-        }
-      ]
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }]
     }
   ]
 }
