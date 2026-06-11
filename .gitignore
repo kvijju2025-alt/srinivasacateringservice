@@ -1,0 +1,29 @@
+# Dependency directories
+/vendor/
+/node_modules/
+
+# PHP environment config
+.env
+.env.*
+
+# Logs & writable
+/writable/logs/
+/writable/cache/
+/writable/session/
+/writable/uploads/
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE / editor
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Deployment secrets
+vercel.local.json
+.vercelignore

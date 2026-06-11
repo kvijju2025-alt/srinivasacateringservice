@@ -1,0 +1,18 @@
+# Srinivasa Catering Services — robots.txt
+# Generated: 2026-06-11
+
+User-agent: *
+Allow: /
+
+# Disallow internal paths
+Disallow: /app/
+Disallow: /writable/
+Disallow: /system/
+Disallow: /.htaccess
+Disallow: /index.php?
+
+# Crawl delay (optional, be polite)
+Crawl-delay: 10
+
+# Sitemap location
+Sitemap: https://srinivasacateringservices.in/sitemap.xml
