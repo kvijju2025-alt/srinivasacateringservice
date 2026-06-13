@@ -1444,10 +1444,19 @@ ul { list-style: none; padding: 0; margin: 0; }
   align-items: center;
   justify-content: center;
   margin-bottom: 1.25rem;
+  transition: all 0.3s ease;
 }
 .location-icon-wrap i {
   font-size: 1.8rem;
   color: var(--gold);
+}
+@media (max-width: 767px) {
+  .location-icon-wrap {
+    width: 44px;
+    height: 44px;
+    margin-bottom: 0.75rem;
+  }
+  .location-icon-wrap i { font-size: 1.1rem; }
 }
 .location-info h3 {
   font-family: 'Playfair Display', serif;

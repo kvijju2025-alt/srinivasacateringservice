@@ -690,6 +690,119 @@
       "<text x='200' y='290' text-anchor='middle' font-family='Georgia,serif' font-size='14' fill='#C4A882'>Sweet Vermicelli Kheer</text>" .
       "</svg>"
     );
+    $svg_upma = _svg_uri(
+      "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'>" .
+      "<rect width='400' height='300' fill='#5A3000'/>" .
+      "<ellipse cx='200' cy='230' rx='148' ry='26' fill='#3D1C02' opacity='.6'/>" .
+      "<path d='M85 158 Q83 245 200 252 Q317 245 315 158 Z' fill='#C8A050'/>" .
+      "<path d='M102 164 Q100 237 200 243 Q300 237 298 164 Z' fill='#E8C870'/>" .
+      "<circle cx='158' cy='192' r='5' fill='#D4A017' opacity='.5'/>" .
+      "<circle cx='175' cy='202' r='4' fill='#C89020' opacity='.45'/>" .
+      "<circle cx='193' cy='186' r='6' fill='#D4A017' opacity='.5'/>" .
+      "<circle cx='212' cy='197' r='5' fill='#C89020' opacity='.45'/>" .
+      "<circle cx='228' cy='183' r='4' fill='#D4A017' opacity='.5'/>" .
+      "<circle cx='245' cy='206' r='5' fill='#C89020' opacity='.4'/>" .
+      "<ellipse cx='178' cy='176' rx='12' ry='5' fill='#2D6B20' opacity='.85' transform='rotate(-20 178 176)'/>" .
+      "<ellipse cx='222' cy='179' rx='12' ry='5' fill='#2D6B20' opacity='.85' transform='rotate(15 222 179)'/>" .
+      "<ellipse cx='200' cy='172' rx='10' ry='5' fill='#2D6B20' opacity='.8' transform='rotate(5 200 172)'/>" .
+      "<circle cx='163' cy='173' r='4' fill='#2A1A00'/>" .
+      "<circle cx='237' cy='176' r='3.5' fill='#2A1A00'/>" .
+      "<circle cx='200' cy='170' r='3' fill='#2A1A00'/>" .
+      "<path d='M172 150 Q169 132 172 116' stroke='#FFF8E7' stroke-width='2' fill='none' stroke-linecap='round' opacity='.5'/>" .
+      "<path d='M200 144 Q197 126 200 110' stroke='#FFF8E7' stroke-width='2' fill='none' stroke-linecap='round' opacity='.5'/>" .
+      "<path d='M228 150 Q225 132 228 116' stroke='#FFF8E7' stroke-width='2' fill='none' stroke-linecap='round' opacity='.5'/>" .
+      "<path d='M85 158 Q200 150 315 158' stroke='#D4A017' stroke-width='3' fill='none' opacity='.8'/>" .
+      "<text x='200' y='268' text-anchor='middle' font-family='Georgia,serif' font-size='22' fill='#D4A017' font-weight='bold'>Rava Upma</text>" .
+      "<text x='200' y='290' text-anchor='middle' font-family='Georgia,serif' font-size='14' fill='#C4A882'>Semolina Upma with Ghee</text>" .
+      "</svg>"
+    );
+    $svg_sambar_rasam = _svg_uri(
+      "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'>" .
+      "<rect width='400' height='300' fill='#7B1800'/>" .
+      "<ellipse cx='118' cy='220' rx='68' ry='13' fill='#5A0000'/>" .
+      "<path d='M60 152 L70 215 L166 215 L176 152 Z' fill='#A03010'/>" .
+      "<ellipse cx='118' cy='152' rx='58' ry='12' fill='#B84020'/>" .
+      "<ellipse cx='118' cy='150' rx='53' ry='9' fill='#8B2500'/>" .
+      "<ellipse cx='107' cy='148' rx='24' ry='5' fill='#CC4A20' opacity='.5'/>" .
+      "<path d='M100 140 Q97 122 100 106' stroke='#FFF8E7' stroke-width='1.8' fill='none' stroke-linecap='round' opacity='.5'/>" .
+      "<path d='M118 134 Q115 116 118 100' stroke='#FFF8E7' stroke-width='1.8' fill='none' stroke-linecap='round' opacity='.5'/>" .
+      "<path d='M136 140 Q133 122 136 106' stroke='#FFF8E7' stroke-width='1.8' fill='none' stroke-linecap='round' opacity='.5'/>" .
+      "<text x='118' y='196' text-anchor='middle' font-family='Georgia,serif' font-size='14' fill='#FFF8E7' opacity='.9'>Sambar</text>" .
+      "<ellipse cx='282' cy='220' rx='68' ry='13' fill='#5A0000'/>" .
+      "<path d='M224 152 L234 215 L330 215 L340 152 Z' fill='#C04A10'/>" .
+      "<ellipse cx='282' cy='152' rx='58' ry='12' fill='#D45A20'/>" .
+      "<ellipse cx='282' cy='150' rx='53' ry='9' fill='#B03800'/>" .
+      "<ellipse cx='271' cy='148' rx='24' ry='5' fill='#E06030' opacity='.5'/>" .
+      "<path d='M264 140 Q261 122 264 106' stroke='#FFF8E7' stroke-width='1.8' fill='none' stroke-linecap='round' opacity='.5'/>" .
+      "<path d='M282 134 Q279 116 282 100' stroke='#FFF8E7' stroke-width='1.8' fill='none' stroke-linecap='round' opacity='.5'/>" .
+      "<path d='M300 140 Q297 122 300 106' stroke='#FFF8E7' stroke-width='1.8' fill='none' stroke-linecap='round' opacity='.5'/>" .
+      "<text x='282' y='196' text-anchor='middle' font-family='Georgia,serif' font-size='14' fill='#FFF8E7' opacity='.9'>Rasam</text>" .
+      "<text x='200' y='258' text-anchor='middle' font-family='Georgia,serif' font-size='20' fill='#D4A017' font-weight='bold'>Sambar &amp; Rasam</text>" .
+      "<text x='200' y='280' text-anchor='middle' font-family='Georgia,serif' font-size='14' fill='#C4A882'>Freshly Made Every Day</text>" .
+      "</svg>"
+    );
+    $svg_vankaya = _svg_uri(
+      "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'>" .
+      "<rect width='400' height='300' fill='#4A0070'/>" .
+      "<ellipse cx='200' cy='218' rx='148' ry='28' fill='#7B0A00' opacity='.8'/>" .
+      "<ellipse cx='200' cy='210' rx='140' ry='22' fill='#9B1A10' opacity='.6'/>" .
+      "<ellipse cx='140' cy='170' rx='38' ry='30' fill='#5A0080'/>" .
+      "<ellipse cx='140' cy='166' rx='34' ry='26' fill='#7B20B0'/>" .
+      "<ellipse cx='128' cy='160' rx='18' ry='10' fill='#9B40C8' opacity='.5'/>" .
+      "<path d='M140 140 Q144 128 148 134' stroke='#2D6B20' stroke-width='3.5' fill='none' stroke-linecap='round'/>" .
+      "<ellipse cx='140' cy='140' rx='9' ry='5' fill='#2D6B20'/>" .
+      "<ellipse cx='140' cy='176' rx='16' ry='10' fill='#C8860A' opacity='.92'/>" .
+      "<circle cx='133' cy='174' r='4' fill='#D4A017' opacity='.7'/>" .
+      "<circle cx='147' cy='178' r='3' fill='#D4A017' opacity='.7'/>" .
+      "<ellipse cx='200' cy='163' rx='40' ry='32' fill='#5A0080'/>" .
+      "<ellipse cx='200' cy='159' rx='36' ry='28' fill='#8030C0'/>" .
+      "<ellipse cx='187' cy='153' rx='20' ry='11' fill='#A040D0' opacity='.5'/>" .
+      "<path d='M200 131 Q204 119 208 125' stroke='#2D6B20' stroke-width='3.5' fill='none' stroke-linecap='round'/>" .
+      "<ellipse cx='200' cy='131' rx='10' ry='5' fill='#2D6B20'/>" .
+      "<ellipse cx='200' cy='170' rx='18' ry='11' fill='#C8860A' opacity='.92'/>" .
+      "<circle cx='192' cy='168' r='4' fill='#D4A017' opacity='.7'/>" .
+      "<circle cx='208' cy='172' r='3.5' fill='#D4A017' opacity='.7'/>" .
+      "<ellipse cx='260' cy='170' rx='38' ry='30' fill='#5A0080'/>" .
+      "<ellipse cx='260' cy='166' rx='34' ry='26' fill='#7B20B0'/>" .
+      "<ellipse cx='248' cy='160' rx='18' ry='10' fill='#9B40C8' opacity='.5'/>" .
+      "<path d='M260 140 Q264 128 268 134' stroke='#2D6B20' stroke-width='3.5' fill='none' stroke-linecap='round'/>" .
+      "<ellipse cx='260' cy='140' rx='9' ry='5' fill='#2D6B20'/>" .
+      "<ellipse cx='260' cy='176' rx='16' ry='10' fill='#C8860A' opacity='.92'/>" .
+      "<circle cx='253' cy='174' r='4' fill='#D4A017' opacity='.7'/>" .
+      "<circle cx='267' cy='178' r='3' fill='#D4A017' opacity='.7'/>" .
+      "<circle cx='170' cy='208' r='3.5' fill='#D4A017' opacity='.65'/>" .
+      "<circle cx='230' cy='205' r='3' fill='#D4A017' opacity='.65'/>" .
+      "<circle cx='200' cy='212' r='3' fill='#C8860A' opacity='.6'/>" .
+      "<text x='200' y='258' text-anchor='middle' font-family='Georgia,serif' font-size='22' fill='#D4A017' font-weight='bold'>Gutti Vankaya</text>" .
+      "<text x='200' y='280' text-anchor='middle' font-family='Georgia,serif' font-size='14' fill='#C4A882'>Stuffed Brinjal Masala</text>" .
+      "</svg>"
+    );
+    $svg_chutney = _svg_uri(
+      "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'>" .
+      "<rect width='400' height='300' fill='#006B3A'/>" .
+      "<ellipse cx='200' cy='238' rx='122' ry='18' fill='#003A20' opacity='.6'/>" .
+      "<path d='M98 158 Q96 248 200 256 Q304 248 302 158 Z' fill='#C8A050'/>" .
+      "<path d='M114 164 Q112 240 200 247 Q288 240 286 164 Z' fill='#F5F5E8'/>" .
+      "<ellipse cx='200' cy='180' rx='72' ry='20' fill='#FFFDE0' opacity='.6'/>" .
+      "<ellipse cx='163' cy='190' rx='13' ry='7' fill='#FFFFF0' opacity='.8' transform='rotate(-15 163 190)'/>" .
+      "<ellipse cx='200' cy='194' rx='11' ry='6' fill='#FFFFF0' opacity='.8'/>" .
+      "<ellipse cx='237' cy='187' rx='12' ry='7' fill='#FFFFF0' opacity='.8' transform='rotate(10 237 187)'/>" .
+      "<ellipse cx='178' cy='208' rx='10' ry='5' fill='#FFFFF0' opacity='.7'/>" .
+      "<ellipse cx='222' cy='210' rx='11' ry='6' fill='#FFFFF0' opacity='.7'/>" .
+      "<path d='M146 200 Q150 191 157 200 Q161 207 156 213 Q153 218 148 212 Q144 206 146 200 Z' fill='#3D8A20'/>" .
+      "<path d='M146 200 L140 189' stroke='#2D6B15' stroke-width='2.5' fill='none' stroke-linecap='round'/>" .
+      "<ellipse cx='247' cy='197' rx='12' ry='5' fill='#2D6B20' opacity='.85' transform='rotate(-25 247 197)'/>" .
+      "<ellipse cx='259' cy='206' rx='12' ry='5' fill='#2D6B20' opacity='.85' transform='rotate(-15 259 206)'/>" .
+      "<ellipse cx='236' cy='208' rx='11' ry='5' fill='#2D6B20' opacity='.8' transform='rotate(5 236 208)'/>" .
+      "<circle cx='168' cy='176' r='4' fill='#2A1A00'/>" .
+      "<circle cx='182' cy='173' r='3.5' fill='#2A1A00'/>" .
+      "<circle cx='226' cy='175' r='4' fill='#2A1A00'/>" .
+      "<ellipse cx='215' cy='174' rx='9' ry='4' fill='#CC2200' opacity='.9' transform='rotate(-20 215 174)'/>" .
+      "<path d='M98 158 Q200 150 302 158' stroke='#D4A017' stroke-width='3' fill='none' opacity='.8'/>" .
+      "<text x='200' y='268' text-anchor='middle' font-family='Georgia,serif' font-size='22' fill='#D4A017' font-weight='bold'>Kobbari Pachadi</text>" .
+      "<text x='200' y='290' text-anchor='middle' font-family='Georgia,serif' font-size='14' fill='#C4A882'>Fresh Coconut Chutney</text>" .
+      "</svg>"
+    );
 
     $gallery = [
       [
@@ -705,7 +818,7 @@
         'sub'      => 'Green moong dosa — Andhra special',
       ],
       [
-        'img'      => 'https://images.unsplash.com/photo-1585703900468-13a1a6553d8b?auto=format&fit=crop&w=700&q=85',
+        'img'      => $svg_upma,
         'fallback' => 'linear-gradient(135deg,#5A3000,#A06010)',
         'caption'  => 'Rava Upma',
         'sub'      => 'Semolina upma with ghee',
@@ -729,13 +842,13 @@
         'sub'      => 'Puja Naivedyam &amp; sweets',
       ],
       [
-        'img'      => 'https://images.unsplash.com/photo-1546069901571-be20009f267a?auto=format&fit=crop&w=700&q=85',
+        'img'      => $svg_sambar_rasam,
         'fallback' => 'linear-gradient(135deg,#7B1800,#CC3300)',
         'caption'  => 'Sambar &amp; Rasam',
         'sub'      => 'Freshly made every day',
       ],
       [
-        'img'      => 'https://images.unsplash.com/photo-1567337710282-87b45b9b6042?auto=format&fit=crop&w=700&q=85',
+        'img'      => $svg_vankaya,
         'fallback' => 'linear-gradient(135deg,#4A0070,#9B1FCC)',
         'caption'  => 'Gutti Vankaya',
         'sub'      => 'Stuffed brinjal Andhra masala',
@@ -753,7 +866,7 @@
         'sub'      => 'Sweet vermicelli kheer',
       ],
       [
-        'img'      => 'https://images.unsplash.com/photo-1606491956391-4e69b99e2c08?auto=format&fit=crop&w=700&q=85',
+        'img'      => $svg_chutney,
         'fallback' => 'linear-gradient(135deg,#006B3A,#00A854)',
         'caption'  => 'Kobbari Pachadi',
         'sub'      => 'Fresh coconut chutney',
