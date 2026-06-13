@@ -759,7 +759,32 @@
         'sub'      => 'Fresh coconut chutney',
       ],
       [
-        'img'      => 'https://images.unsplash.com/photo-1605478371310-a9f1e96b4ff4?auto=format&fit=crop&w=700&q=85',
+        'img'      => _svg_uri(
+          "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'>" .
+          "<rect width='400' height='300' fill='#6B0000'/>" .
+          "<ellipse cx='200' cy='235' rx='130' ry='18' fill='#3A0000' opacity='.6'/>" .
+          "<circle cx='200' cy='155' r='90' fill='#F5EDD0'/>" .
+          "<circle cx='200' cy='155' r='86' fill='#FFFBE8'/>" .
+          "<circle cx='200' cy='155' r='72' fill='#F0D8A0'/>" .
+          "<circle cx='200' cy='155' r='65' fill='#E8C870'/>" .
+          "<circle cx='200' cy='148' r='52' fill='#D4A017' opacity='.35'/>" .
+          "<circle cx='186' cy='145' r='8' fill='#C07800' opacity='.5'/>" .
+          "<circle cx='214' cy='152' r='6' fill='#C07800' opacity='.45'/>" .
+          "<circle cx='200' cy='160' r='7' fill='#B06000' opacity='.4'/>" .
+          "<ellipse cx='200' cy='232' rx='110' ry='14' fill='#8B2500'/>" .
+          "<ellipse cx='200' cy='228' rx='108' ry='13' fill='#A83010'/>" .
+          "<ellipse cx='200' cy='224' rx='105' ry='12' fill='#C04020'/>" .
+          "<ellipse cx='148' cy='222' rx='28' ry='10' fill='#7B5030' opacity='.8'/>" .
+          "<ellipse cx='252' cy='222' rx='28' ry='10' fill='#7B5030' opacity='.8'/>" .
+          "<circle cx='152' cy='217' r='12' fill='#9A6840' opacity='.7'/>" .
+          "<circle cx='248' cy='217' r='12' fill='#9A6840' opacity='.7'/>" .
+          "<path d='M172 85 Q169 68 172 52' stroke='#FFF8E7' stroke-width='2' fill='none' stroke-linecap='round' opacity='.45'/>" .
+          "<path d='M200 80 Q197 63 200 47' stroke='#FFF8E7' stroke-width='2' fill='none' stroke-linecap='round' opacity='.45'/>" .
+          "<path d='M228 85 Q225 68 228 52' stroke='#FFF8E7' stroke-width='2' fill='none' stroke-linecap='round' opacity='.45'/>" .
+          "<text x='200' y='268' text-anchor='middle' font-family='Georgia,serif' font-size='22' fill='#D4A017' font-weight='bold'>Poori &amp; Masala</text>" .
+          "<text x='200' y='290' text-anchor='middle' font-family='Georgia,serif' font-size='14' fill='#C4A882'>Fluffy Poori with Aloo Masala</text>" .
+          "</svg>"
+        ),
         'fallback' => 'linear-gradient(135deg,#6B0000,#A01010)',
         'caption'  => 'Poori &amp; Masala',
         'sub'      => 'Fluffy poori with aloo masala',
