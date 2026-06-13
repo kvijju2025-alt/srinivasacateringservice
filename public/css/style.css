@@ -45,6 +45,7 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: calc(var(--ann-h) + var(--nav-h));
   font-size: 16px;
+  overflow-x: hidden;
 }
 
 body {
@@ -389,6 +390,11 @@ ul { list-style: none; padding: 0; margin: 0; }
   display: flex;
   align-items: center;
   position: relative;
+}
+/* On mobile, start content from top (after nav padding) — prevents
+   flex-centering from pushing content into or behind the navbar */
+@media (max-width: 991px) {
+  .hero-slide { align-items: flex-start; }
 }
 
 /* Push content below announcement bar + navbar */
@@ -1883,6 +1889,9 @@ section { position: relative; }
 }
 
 @media (max-width: 991px) {
+  /* Navbar: always solid on tablet/mobile so it visually separates from hero */
+  .navbar { background: var(--maroon-dark) !important; }
+
   .hero-title { font-size: clamp(1.9rem,6vw,3rem); }
   .about-visual-wrapper { max-width: 320px; margin-bottom: 2rem; }
   .about-section, .services-section, .why-section,
@@ -1892,6 +1901,14 @@ section { position: relative; }
   .hero-nav-btn.carousel-control-prev { left: 0.5rem; }
   .hero-nav-btn.carousel-control-next { right: 0.5rem; }
   .hero-nav-circle { width: 40px; height: 40px; font-size: 0.85rem; }
+
+  /* Reduce about-badge negative offset so badges don't bleed past viewport */
+  .badge-tl { left: 0; }
+  .badge-tr { right: 0; }
+  .badge-br { right: 0; }
+
+  /* Prevent about section from adding horizontal scroll */
+  .about-section { overflow-x: hidden; }
 }
 
 @media (max-width: 767px) {
@@ -1902,10 +1919,23 @@ section { position: relative; }
   .ann-track span { font-size: 0.72rem; }
   .hero-section { height: 100svh; }
   .hero-title  { font-size: clamp(1.65rem,7vw,2.4rem); }
-  .hero-stats  { gap: 0.5rem; }
-  .hero-stat   { font-size: 0.75rem; padding: 0.3rem 0.65rem; }
   .hero-buttons{ gap: 0.75rem; }
   .btn-hero-primary, .btn-hero-whatsapp { font-size: 0.8rem; padding: 0.75rem 1.4rem; }
+
+  /* Hide stats row on mobile — reduces content height and clutter */
+  .hero-stats  { display: none; }
+
+  /* Tighten hero badge and subtitle spacing */
+  .hero-badge    { margin-bottom: 0.75rem; font-size: 0.72rem; padding: 0.3rem 0.85rem; }
+  .hero-subtitle { font-size: 0.92rem; margin-bottom: 1.25rem; }
+  .hero-content  { padding-bottom: 1rem; }
+  .hero-slide .container { padding-bottom: 2rem; }
+
+  /* Decorative floating emojis — smaller and less intrusive on mobile */
+  .hero-deco-1 { font-size: 1.2rem; opacity: 0.2; }
+  .hero-deco-2 { font-size: 0.9rem; opacity: 0.18; }
+  .hero-deco-4 { font-size: 1.5rem; opacity: 0.18; }
+
   .about-owners { flex-direction: column; }
   .section-title { font-size: 1.7rem; }
   .footer-top { padding: 3rem 0 2rem; }
@@ -1918,6 +1948,13 @@ section { position: relative; }
   .contact-card { padding: 1.75rem 1.25rem; }
   .carousel-control-prev { left: -2px; }
   .carousel-control-next { right: -2px; }
+
+  /* Hide overlapping stat badges on very small screens */
+  .about-stat-badge { display: none; }
+
+  /* Ensure sections don't overflow horizontally */
+  .services-section, .curry-section, .why-section,
+  .gallery-section, .testimonials-section { overflow-x: hidden; }
 }
 
 /* =============================================
