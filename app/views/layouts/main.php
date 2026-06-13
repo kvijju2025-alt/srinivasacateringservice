@@ -611,6 +611,86 @@
     </div>
 
     <?php
+    // SVG vector illustrations for gallery items (no external image dependency)
+    function _svg_uri(string $svg): string {
+      return 'data:image/svg+xml,' . rawurlencode($svg);
+    }
+    $svg_pesarattu = _svg_uri(
+      "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'>" .
+      "<rect width='400' height='300' fill='#1B3A0A'/>" .
+      "<ellipse cx='200' cy='200' rx='168' ry='24' fill='#252525'/>" .
+      "<ellipse cx='200' cy='195' rx='168' ry='24' fill='#363636'/>" .
+      "<ellipse cx='200' cy='162' rx='150' ry='60' fill='#5A8015'/>" .
+      "<ellipse cx='200' cy='157' rx='145' ry='54' fill='#72A222'/>" .
+      "<ellipse cx='200' cy='157' rx='65' ry='26' fill='#C07800' opacity='.9'/>" .
+      "<circle cx='168' cy='153' r='13' fill='#FFFEE0' opacity='.6'/>" .
+      "<circle cx='232' cy='160' r='10' fill='#FFFEE0' opacity='.5'/>" .
+      "<path d='M176 107 Q173 89 177 73' stroke='#FFF8E7' stroke-width='2' fill='none' stroke-linecap='round' opacity='.45'/>" .
+      "<path d='M200 99 Q197 81 200 65' stroke='#FFF8E7' stroke-width='2' fill='none' stroke-linecap='round' opacity='.45'/>" .
+      "<path d='M224 107 Q221 89 223 73' stroke='#FFF8E7' stroke-width='2' fill='none' stroke-linecap='round' opacity='.45'/>" .
+      "<text x='200' y='248' text-anchor='middle' font-family='Georgia,serif' font-size='22' fill='#D4A017' font-weight='bold'>Pesarattu</text>" .
+      "<text x='200' y='272' text-anchor='middle' font-family='Georgia,serif' font-size='14' fill='#C4A882'>Green Moong Dosa</text>" .
+      "</svg>"
+    );
+    $svg_coffee = _svg_uri(
+      "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'>" .
+      "<rect width='400' height='300' fill='#2A1500'/>" .
+      "<ellipse cx='200' cy='232' rx='96' ry='20' fill='#7B5030'/>" .
+      "<ellipse cx='200' cy='227' rx='96' ry='20' fill='#9A6840'/>" .
+      "<path d='M152 165 L162 222 L238 222 L248 165 Z' fill='#B8904A'/>" .
+      "<ellipse cx='200' cy='165' rx='48' ry='11' fill='#C8A055'/>" .
+      "<ellipse cx='200' cy='163' rx='43' ry='8' fill='#3D1C02'/>" .
+      "<ellipse cx='200' cy='162' rx='37' ry='6' fill='#6B3500' opacity='.7'/>" .
+      "<path d='M250 178 L258 218 L290 218 L298 178 Z' fill='#A87840'/>" .
+      "<ellipse cx='274' cy='178' rx='24' ry='7' fill='#B8904A'/>" .
+      "<path d='M183 153 Q179 135 183 119' stroke='#FFF8E7' stroke-width='2.5' fill='none' stroke-linecap='round' opacity='.55'/>" .
+      "<path d='M200 149 Q196 131 200 115' stroke='#FFF8E7' stroke-width='2.5' fill='none' stroke-linecap='round' opacity='.55'/>" .
+      "<path d='M217 153 Q213 135 217 119' stroke='#FFF8E7' stroke-width='2.5' fill='none' stroke-linecap='round' opacity='.55'/>" .
+      "<text x='200' y='268' text-anchor='middle' font-family='Georgia,serif' font-size='22' fill='#D4A017' font-weight='bold'>Filter Coffee</text>" .
+      "<text x='200' y='290' text-anchor='middle' font-family='Georgia,serif' font-size='14' fill='#C4A882'>South Indian Kaapi</text>" .
+      "</svg>"
+    );
+    $svg_festive = _svg_uri(
+      "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'>" .
+      "<rect width='400' height='300' fill='#2D4A1E'/>" .
+      "<ellipse cx='200' cy='162' rx='172' ry='106' fill='#3D7A28' opacity='.75'/>" .
+      "<ellipse cx='200' cy='160' rx='166' ry='100' fill='#4A9030' opacity='.5'/>" .
+      "<line x1='40' y1='160' x2='360' y2='160' stroke='#2A6018' stroke-width='3' opacity='.5'/>" .
+      "<ellipse cx='200' cy='160' rx='48' ry='34' fill='#FFFEE0' opacity='.92'/>" .
+      "<ellipse cx='113' cy='135' rx='27' ry='20' fill='#8B2500'/>" .
+      "<ellipse cx='113' cy='132' rx='23' ry='15' fill='#A83010'/>" .
+      "<ellipse cx='287' cy='135' rx='27' ry='20' fill='#AA3800'/>" .
+      "<ellipse cx='287' cy='132' rx='23' ry='15' fill='#C04812'/>" .
+      "<circle cx='148' cy='196' r='18' fill='#C8860A'/>" .
+      "<circle cx='252' cy='196' r='18' fill='#3D6B3A'/>" .
+      "<ellipse cx='200' cy='213' rx='24' ry='16' fill='#D4A017'/>" .
+      "<circle cx='128' cy='110' r='7' fill='#FF8C8C' opacity='.7'/>" .
+      "<circle cx='272' cy='110' r='7' fill='#FFB870' opacity='.7'/>" .
+      "<text x='200' y='257' text-anchor='middle' font-family='Georgia,serif' font-size='22' fill='#FFF8E7' font-weight='bold'>Festive Spread</text>" .
+      "<text x='200' y='281' text-anchor='middle' font-family='Georgia,serif' font-size='14' fill='#D4A017'>Puja Naivedyam</text>" .
+      "</svg>"
+    );
+    $svg_payasam = _svg_uri(
+      "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'>" .
+      "<rect width='400' height='300' fill='#4A1800'/>" .
+      "<path d='M110 158 Q108 245 200 252 Q292 245 290 158 Z' fill='#C8A050'/>" .
+      "<path d='M124 162 Q122 236 200 242 Q278 236 276 162 Z' fill='#F5D880'/>" .
+      "<path d='M145 183 Q172 174 200 181 Q228 174 255 183' stroke='#C89020' stroke-width='3' fill='none' opacity='.85'/>" .
+      "<path d='M143 193 Q170 184 200 191 Q230 184 257 193' stroke='#D4A017' stroke-width='2.5' fill='none' opacity='.75'/>" .
+      "<path d='M145 203 Q172 194 200 201 Q228 194 255 203' stroke='#C89020' stroke-width='2.5' fill='none' opacity='.85'/>" .
+      "<ellipse cx='200' cy='174' rx='58' ry='13' fill='#FFFBE8' opacity='.3'/>" .
+      "<ellipse cx='170' cy='181' rx='8' ry='5' fill='#C89020' transform='rotate(-25 170 181)'/>" .
+      "<ellipse cx='230' cy='181' rx='8' ry='5' fill='#C89020' transform='rotate(25 230 181)'/>" .
+      "<ellipse cx='200' cy='174' rx='6' ry='8' fill='#6B3C0A'/>" .
+      "<path d='M172 153 Q169 136 172 120' stroke='#FFF8E7' stroke-width='2' fill='none' stroke-linecap='round' opacity='.5'/>" .
+      "<path d='M200 148 Q197 131 200 115' stroke='#FFF8E7' stroke-width='2' fill='none' stroke-linecap='round' opacity='.5'/>" .
+      "<path d='M228 153 Q225 136 228 120' stroke='#FFF8E7' stroke-width='2' fill='none' stroke-linecap='round' opacity='.5'/>" .
+      "<path d='M110 158 Q200 150 290 158' stroke='#D4A017' stroke-width='3.5' fill='none' opacity='.85'/>" .
+      "<text x='200' y='268' text-anchor='middle' font-family='Georgia,serif' font-size='20' fill='#D4A017' font-weight='bold'>Semiya Payasam</text>" .
+      "<text x='200' y='290' text-anchor='middle' font-family='Georgia,serif' font-size='14' fill='#C4A882'>Sweet Vermicelli Kheer</text>" .
+      "</svg>"
+    );
+
     $gallery = [
       [
         'img'      => 'https://images.unsplash.com/photo-1630383249896-424e482df921?auto=format&fit=crop&w=900&q=85',
@@ -619,7 +699,7 @@
         'sub'      => 'Classic Andhra morning tiffin',
       ],
       [
-        'img'      => 'https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=700&q=85',
+        'img'      => $svg_pesarattu,
         'fallback' => 'linear-gradient(135deg,#1B4A0A,#3D8A2C)',
         'caption'  => 'Pesarattu',
         'sub'      => 'Green moong dosa — Andhra special',
@@ -631,7 +711,7 @@
         'sub'      => 'Semolina upma with ghee',
       ],
       [
-        'img'      => 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=700&q=85',
+        'img'      => $svg_coffee,
         'fallback' => 'linear-gradient(135deg,#2A1500,#6B3800)',
         'caption'  => 'Filter Coffee',
         'sub'      => 'South Indian filter kaapi',
@@ -643,7 +723,7 @@
         'sub'      => 'Traditional Vidhya Bhojanam',
       ],
       [
-        'img'      => 'https://images.unsplash.com/photo-1476224203421-74177e022103?auto=format&fit=crop&w=900&q=85',
+        'img'      => $svg_festive,
         'fallback' => 'linear-gradient(135deg,#2D6A4F,#52B788)',
         'caption'  => 'Festive Spread',
         'sub'      => 'Puja Naivedyam &amp; sweets',
@@ -667,7 +747,7 @@
         'sub'      => 'Tamarind rice — festival dish',
       ],
       [
-        'img'      => 'https://images.unsplash.com/photo-1549007994-cb92caebd54b?auto=format&fit=crop&w=700&q=85',
+        'img'      => $svg_payasam,
         'fallback' => 'linear-gradient(135deg,#4A1800,#8B3A0A)',
         'caption'  => 'Semiya Payasam',
         'sub'      => 'Sweet vermicelli kheer',

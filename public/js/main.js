@@ -115,23 +115,24 @@
     var navLinks = document.querySelectorAll('.navbar-nav .nav-link');
     if (!sections.length || !navLinks.length) return;
 
+    var ticking = false;
     function setActive() {
       var scrollPos = window.scrollY + 120;
       var current = '';
       sections.forEach(function (sec) {
-        if (scrollPos >= sec.offsetTop) {
-          current = sec.getAttribute('id');
-        }
+        if (scrollPos >= sec.offsetTop) current = sec.getAttribute('id');
       });
       navLinks.forEach(function (link) {
-        link.classList.remove('active');
-        if (link.getAttribute('href') === '#' + current) {
-          link.classList.add('active');
-        }
+        link.classList.toggle('active', link.getAttribute('href') === '#' + current);
       });
+      ticking = false;
     }
     setActive();
-    window.addEventListener('scroll', setActive, { passive: true });
+    window.addEventListener('scroll', function () {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(setActive);
+    }, { passive: true });
   }
 
   /* =============================================
@@ -199,22 +200,22 @@
   ============================================= */
   function initParallax() {
     var hero = document.querySelector('.hero-section');
-    if (!hero) return;
+    if (!hero || window.matchMedia('(max-width: 768px)').matches) return;
 
-    // Only on desktop/tablet
-    if (window.matchMedia('(max-width: 768px)').matches) return;
+    var decos = Array.from(hero.querySelectorAll('.hero-deco'));
+    var ticking = false;
 
     window.addEventListener('scroll', function () {
-      var scrolled = window.scrollY;
-      if (scrolled > window.innerHeight) return;
-      var overlay = hero.querySelector('.hero-overlay');
-      if (overlay) {
-        overlay.style.transform = 'translateY(' + scrolled * 0.15 + 'px)';
-      }
-      var decos = hero.querySelectorAll('.hero-deco');
-      decos.forEach(function (d, i) {
-        var speed = 0.06 + i * 0.02;
-        d.style.transform = 'translateY(' + scrolled * speed + 'px)';
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(function () {
+        var scrolled = window.scrollY;
+        if (scrolled < window.innerHeight) {
+          decos.forEach(function (d, i) {
+            d.style.transform = 'translateY(' + (scrolled * (0.06 + i * 0.02)) + 'px)';
+          });
+        }
+        ticking = false;
       });
     }, { passive: true });
   }

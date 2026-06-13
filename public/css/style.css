@@ -393,8 +393,8 @@ ul { list-style: none; padding: 0; margin: 0; }
 
 /* Push content below announcement bar + navbar */
 .hero-slide .container {
-  padding-top: calc(var(--ann-h) + var(--nav-h) + 3.5rem);
-  padding-bottom: 5rem;
+  padding-top: calc(var(--ann-h) + var(--nav-h) + 1.5rem);
+  padding-bottom: 3rem;
   position: relative;
   z-index: 5;
 }
@@ -508,8 +508,8 @@ ul { list-style: none; padding: 0; margin: 0; }
 .hero-content {
   position: relative;
   z-index: 10;
-  padding-top: calc(var(--nav-h) + 2rem);
-  padding-bottom: 4rem;
+  padding-top: 0.5rem;
+  padding-bottom: 2rem;
 }
 
 .hero-badge {
@@ -1914,7 +1914,7 @@ section { position: relative; }
 }
 
 @media (max-width: 480px) {
-  .hero-content { padding-top: calc(var(--nav-h) + 1.5rem); }
+  .hero-content { padding-top: 0; }
   .contact-card { padding: 1.75rem 1.25rem; }
   .carousel-control-prev { left: -2px; }
   .carousel-control-next { right: -2px; }
@@ -1923,7 +1923,7 @@ section { position: relative; }
 /* =============================================
    UTILITY / ANIMATIONS
 ============================================= */
-[data-aos] { will-change: transform, opacity; }
+[data-aos] { will-change: auto; }
 
 .visually-hidden-focusable:not(:focus):not(:focus-within) {
   position: absolute;
